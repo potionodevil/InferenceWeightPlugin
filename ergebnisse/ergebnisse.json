@@ -1,0 +1,370 @@
+{
+ "note": "Prozent richtige Antworten auf den 295 Testfragen (data/test_questions.jsonl), Regel in testbett/score_answers.py. runs = unabhaengige Wiederholungen derselben Bedingung.",
+ "n": {
+  "all": {
+   "direct": 120,
+   "para": 120,
+   "twohop": 26,
+   "reverse": 21,
+   "verbatim": 8
+  },
+  "quorvex": {
+   "direct": 60,
+   "para": 60,
+   "twohop": 13,
+   "reverse": 11,
+   "verbatim": 4
+  },
+  "kethara": {
+   "direct": 60,
+   "para": 60,
+   "twohop": 13,
+   "reverse": 10,
+   "verbatim": 4
+  }
+ },
+ "conditions": {
+  "A": {
+   "name": "Bedingung A: ohne Kontext",
+   "runs": [
+    {
+     "all": {
+      "direct": 3.33,
+      "para": 3.33,
+      "twohop": 0.0,
+      "reverse": 0.0,
+      "verbatim": 0.0,
+      "overall": 2.71
+     },
+     "quorvex": {
+      "direct": 1.67,
+      "para": 1.67,
+      "twohop": 0.0,
+      "reverse": 0.0,
+      "verbatim": 0.0,
+      "overall": 1.35
+     },
+     "kethara": {
+      "direct": 5.0,
+      "para": 5.0,
+      "twohop": 0.0,
+      "reverse": 0.0,
+      "verbatim": 0.0,
+      "overall": 4.08
+     }
+    }
+   ]
+  },
+  "B": {
+   "name": "Bedingung B: Dokument im Kontext",
+   "runs": [
+    {
+     "all": {
+      "direct": 92.5,
+      "para": 76.67,
+      "twohop": 69.23,
+      "reverse": 71.43,
+      "verbatim": 87.5,
+      "overall": 82.37
+     },
+     "quorvex": {
+      "direct": 91.67,
+      "para": 73.33,
+      "twohop": 61.54,
+      "reverse": 63.64,
+      "verbatim": 100.0,
+      "overall": 79.73
+     },
+     "kethara": {
+      "direct": 93.33,
+      "para": 80.0,
+      "twohop": 76.92,
+      "reverse": 80.0,
+      "verbatim": 75.0,
+      "overall": 85.03
+     }
+    }
+   ]
+  },
+  "C": {
+   "name": "Bedingung C",
+   "runs": [
+    {
+     "all": {
+      "direct": 59.17,
+      "para": 41.67,
+      "twohop": 38.46,
+      "reverse": 14.29,
+      "verbatim": 62.5,
+      "overall": 47.12
+     },
+     "quorvex": {
+      "direct": 58.33,
+      "para": 38.33,
+      "twohop": 23.08,
+      "reverse": 0.0,
+      "verbatim": 25.0,
+      "overall": 41.89
+     },
+     "kethara": {
+      "direct": 60.0,
+      "para": 45.0,
+      "twohop": 53.85,
+      "reverse": 30.0,
+      "verbatim": 100.0,
+      "overall": 52.38
+     }
+    },
+    {
+     "all": {
+      "direct": 60.83,
+      "para": 36.67,
+      "twohop": 38.46,
+      "reverse": 14.29,
+      "verbatim": 37.5,
+      "overall": 45.08
+     },
+     "quorvex": {
+      "direct": 65.0,
+      "para": 25.0,
+      "twohop": 30.77,
+      "reverse": 9.09,
+      "verbatim": 25.0,
+      "overall": 40.54
+     },
+     "kethara": {
+      "direct": 56.67,
+      "para": 48.33,
+      "twohop": 46.15,
+      "reverse": 20.0,
+      "verbatim": 50.0,
+      "overall": 49.66
+     }
+    }
+   ]
+  },
+  "D": {
+   "name": "Bedingung D",
+   "runs": [
+    {
+     "all": {
+      "direct": 96.67,
+      "para": 87.5,
+      "twohop": 34.62,
+      "reverse": 23.81,
+      "verbatim": 100.0,
+      "overall": 82.37
+     },
+     "quorvex": {
+      "direct": 93.33,
+      "para": 90.0,
+      "twohop": 30.77,
+      "reverse": 9.09,
+      "verbatim": 100.0,
+      "overall": 80.4
+     },
+     "kethara": {
+      "direct": 100.0,
+      "para": 85.0,
+      "twohop": 38.46,
+      "reverse": 40.0,
+      "verbatim": 100.0,
+      "overall": 84.35
+     }
+    },
+    {
+     "all": {
+      "direct": 97.5,
+      "para": 90.0,
+      "twohop": 34.62,
+      "reverse": 19.05,
+      "verbatim": 100.0,
+      "overall": 83.39
+     },
+     "quorvex": {
+      "direct": 96.67,
+      "para": 95.0,
+      "twohop": 46.15,
+      "reverse": 9.09,
+      "verbatim": 100.0,
+      "overall": 85.14
+     },
+     "kethara": {
+      "direct": 98.33,
+      "para": 85.0,
+      "twohop": 23.08,
+      "reverse": 30.0,
+      "verbatim": 100.0,
+      "overall": 81.63
+     }
+    },
+    {
+     "all": {
+      "direct": 97.5,
+      "para": 87.5,
+      "twohop": 23.08,
+      "reverse": 19.05,
+      "verbatim": 100.0,
+      "overall": 81.36
+     },
+     "quorvex": {
+      "direct": 95.0,
+      "para": 86.67,
+      "twohop": 30.77,
+      "reverse": 18.18,
+      "verbatim": 100.0,
+      "overall": 80.41
+     },
+     "kethara": {
+      "direct": 100.0,
+      "para": 88.33,
+      "twohop": 15.38,
+      "reverse": 20.0,
+      "verbatim": 100.0,
+      "overall": 82.31
+     }
+    }
+   ]
+  },
+  "E": {
+   "name": "Bedingung E",
+   "runs": [
+    {
+     "all": {
+      "direct": 87.5,
+      "para": 73.33,
+      "twohop": 46.15,
+      "reverse": 28.57,
+      "verbatim": 100.0,
+      "overall": 74.24
+     },
+     "quorvex": {
+      "direct": 86.67,
+      "para": 63.33,
+      "twohop": 30.77,
+      "reverse": 36.36,
+      "verbatim": 100.0,
+      "overall": 68.92
+     },
+     "kethara": {
+      "direct": 88.33,
+      "para": 83.33,
+      "twohop": 61.54,
+      "reverse": 20.0,
+      "verbatim": 100.0,
+      "overall": 79.59
+     }
+    },
+    {
+     "all": {
+      "direct": 90.0,
+      "para": 75.0,
+      "twohop": 53.85,
+      "reverse": 33.33,
+      "verbatim": 87.5,
+      "overall": 76.61
+     },
+     "quorvex": {
+      "direct": 88.33,
+      "para": 68.33,
+      "twohop": 38.46,
+      "reverse": 27.27,
+      "verbatim": 75.0,
+      "overall": 70.94
+     },
+     "kethara": {
+      "direct": 91.67,
+      "para": 81.67,
+      "twohop": 69.23,
+      "reverse": 40.0,
+      "verbatim": 100.0,
+      "overall": 82.32
+     }
+    },
+    {
+     "all": {
+      "direct": 84.17,
+      "para": 73.33,
+      "twohop": 46.15,
+      "reverse": 47.62,
+      "verbatim": 100.0,
+      "overall": 74.24
+     },
+     "quorvex": {
+      "direct": 81.67,
+      "para": 65.0,
+      "twohop": 30.77,
+      "reverse": 45.45,
+      "verbatim": 100.0,
+      "overall": 68.24
+     },
+     "kethara": {
+      "direct": 86.67,
+      "para": 81.67,
+      "twohop": 61.54,
+      "reverse": 50.0,
+      "verbatim": 100.0,
+      "overall": 80.27
+     }
+    }
+   ]
+  },
+  "F": {
+   "name": "Bedingung F",
+   "runs": [
+    {
+     "all": {
+      "direct": 97.5,
+      "para": 87.5,
+      "twohop": 57.69,
+      "reverse": 23.81,
+      "verbatim": 100.0,
+      "overall": 84.75
+     },
+     "quorvex": {
+      "direct": 95.0,
+      "para": 88.33,
+      "twohop": 46.15,
+      "reverse": 9.09,
+      "verbatim": 100.0,
+      "overall": 81.75
+     },
+     "kethara": {
+      "direct": 100.0,
+      "para": 86.67,
+      "twohop": 69.23,
+      "reverse": 40.0,
+      "verbatim": 100.0,
+      "overall": 87.76
+     }
+    },
+    {
+     "all": {
+      "direct": 97.5,
+      "para": 88.33,
+      "twohop": 42.31,
+      "reverse": 19.05,
+      "verbatim": 100.0,
+      "overall": 83.39
+     },
+     "quorvex": {
+      "direct": 95.0,
+      "para": 88.33,
+      "twohop": 30.77,
+      "reverse": 9.09,
+      "verbatim": 100.0,
+      "overall": 80.4
+     },
+     "kethara": {
+      "direct": 100.0,
+      "para": 88.33,
+      "twohop": 53.85,
+      "reverse": 30.0,
+      "verbatim": 100.0,
+      "overall": 86.39
+     }
+    }
+   ]
+  }
+ }
+}

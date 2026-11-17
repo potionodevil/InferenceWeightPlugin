@@ -1,0 +1,1 @@
+# score_answers.py nutzt nur die Python-Standardbibliothek (Python >= 3.8).
